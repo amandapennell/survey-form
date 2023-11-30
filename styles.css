@@ -119,14 +119,35 @@ button {
     border: none;
 }
 
-submit {
+.submit {
     display: block;
     background: var(--color-accent);
     color: var(--color-light);
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1rem;
     width: 100%;
     padding: 0.75rem;
     border-radius: 2px;
     cursor: pointer;
+}
+
+/* Media queries */
+
+@media (min-width: 480px) {
+    form {
+        padding: 2.5rem;
+    }
+}
+
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
 }
